@@ -35,10 +35,14 @@ android {
 dependencies {
     coreLibraryDesugaring libs.desuger.jdk.libs
 
+    implementation libs.datastore.preferences.core.jvm
     implementation libs.appcompat
     implementation libs.material
     implementation libs.activity
     implementation libs.constraintlayout
+    implementation libs.datastore.preferences
+    implementation libs.datastore.preferences.rxjava3
+    implementation libs.datastore.preferences.core.jvm
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
