@@ -7,9 +7,10 @@ appcompat = "1.7.0"
 material = "1.12.0"
 activity = "1.9.1"
 constraintlayout = "2.1.4"
+datastore = "1.1.1"
+datastorePreferencesCoreJvm = "1.1.1"
+
 desugerJdkLibs = "2.0.4"
-okhttp = "4.10.0"
-moshi = "1.15.0"
 
 [libraries]
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -19,9 +20,11 @@ appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "a
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+datastore-preferences = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "datastore" }
+datastore-preferences-rxjava3 = { group = "androidx.datastore", name = "datastore-preferences-rxjava3", version.ref = "datastore" }
+datastore-preferences-core-jvm = { group = "androidx.datastore", name = "datastore-preferences-core-jvm", version.ref = "datastorePreferencesCoreJvm" }
+
 desuger-jdk-libs = { group = "com.android.tools", name = "desugar_jdk_libs", version.ref = "desugerJdkLibs" }
-okhttp = { group = "com.squareup.okhttp3" , name = "okhttp", version.ref = "okhttp" }
-moshi = { group = "com.squareup.moshi", name = "moshi", version.ref = "moshi"}
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
