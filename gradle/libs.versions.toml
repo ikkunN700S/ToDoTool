@@ -11,6 +11,7 @@ datastore = "1.1.1"
 datastorePreferencesCoreJvm = "1.1.1"
 
 desugerJdkLibs = "2.0.4"
+room = "2.6.1"
 
 [libraries]
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -23,9 +24,10 @@ constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayo
 datastore-preferences = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "datastore" }
 datastore-preferences-rxjava3 = { group = "androidx.datastore", name = "datastore-preferences-rxjava3", version.ref = "datastore" }
 datastore-preferences-core-jvm = { group = "androidx.datastore", name = "datastore-preferences-core-jvm", version.ref = "datastorePreferencesCoreJvm" }
+room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
 
 desuger-jdk-libs = { group = "com.android.tools", name = "desugar_jdk_libs", version.ref = "desugerJdkLibs" }
-
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 

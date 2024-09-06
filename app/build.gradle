@@ -33,6 +33,7 @@ android {
 }
 
 dependencies {
+
     coreLibraryDesugaring libs.desuger.jdk.libs
 
     implementation libs.appcompat
@@ -47,4 +48,6 @@ dependencies {
     androidTestImplementation libs.espresso.core
 
     implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation libs.room.runtime
+    annotationProcessor libs.room.compiler
 }
