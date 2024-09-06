@@ -54,7 +54,7 @@ public class Settings extends AppCompatActivity {
         });
 
         binding.linkIcon.setOnClickListener(view -> {
-            Intent intent = new Intent(this, Settings.class);
+            Intent intent = new Intent(this, LinkPage.class);
             startActivity(intent);
         });
 

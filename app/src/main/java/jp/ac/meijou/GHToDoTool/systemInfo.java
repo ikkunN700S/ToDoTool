@@ -1,6 +1,7 @@
 package jp.ac.meijou.GHToDoTool;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 
@@ -35,5 +36,27 @@ public class systemInfo extends AppCompatActivity {
         // 端末名を取得
         String deviceName = Build.MODEL;
         binding.devicename.setText(deviceName);
+
+        // ナビゲーションバーここから
+        binding.homeIcon.setOnClickListener(view -> {
+            Intent intent = new Intent(this, Settings.class);
+            startActivity(intent);
+        });
+
+        binding.scheduleIcon.setOnClickListener(view -> {
+            Intent intent = new Intent(this, Settings.class);
+            startActivity(intent);
+        });
+
+        binding.linkIcon.setOnClickListener(view -> {
+            Intent intent = new Intent(this, LinkPage.class);
+            startActivity(intent);
+        });
+
+        binding.settingIcon.setOnClickListener(view -> {
+            Intent intent = new Intent(this, Settings.class);
+            startActivity(intent);
+        });
+        // ナビゲーションバーここまで
     }
 }
