@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LinkPage">
+
+    <ImageView
+        android:id="@+id/icon1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/label1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="label1"
+        app:layout_constraintTop_toBottomOf="@+id/icon1"
+        app:layout_constraintStart_toStartOf="@+id/icon1"
+        app:layout_constraintEnd_toEndOf="@+id/icon1"/>
+
+    <ImageView
+        android:id="@+id/icon2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/label2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="label2"
+        app:layout_constraintTop_toBottomOf="@+id/icon2"
+        app:layout_constraintStart_toStartOf="@+id/icon2"
+        app:layout_constraintEnd_toEndOf="@+id/icon2"/>
+
+    <ImageView
+        android:id="@+id/icon3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label1"/>
+
+    <TextView
+        android:id="@+id/label3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="label3"
+        app:layout_constraintTop_toBottomOf="@+id/icon3"
+        app:layout_constraintStart_toStartOf="@+id/icon3"
+        app:layout_constraintEnd_toEndOf="@+id/icon3"/>
+
+    <ImageView
+        android:id="@+id/icon4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label2"/>
+
+    <TextView
+        android:id="@+id/label4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="label4"
+        app:layout_constraintTop_toBottomOf="@+id/icon4"
+        app:layout_constraintStart_toStartOf="@+id/icon4"
+        app:layout_constraintEnd_toEndOf="@+id/icon4"/>
+
+    <ImageView
+        android:id="@+id/icon5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label3"/>
+
+    <TextView
+        android:id="@+id/label5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="label5"
+        app:layout_constraintTop_toBottomOf="@+id/icon5"
+        app:layout_constraintStart_toStartOf="@+id/icon5"
+        app:layout_constraintEnd_toEndOf="@+id/icon5"/>
+
+    <ImageView
+        android:id="@+id/icon6"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label4"/>
+
+    <TextView
+        android:id="@+id/label6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="label6"
+        app:layout_constraintTop_toBottomOf="@+id/icon6"
+        app:layout_constraintStart_toStartOf="@+id/icon6"
+        app:layout_constraintEnd_toEndOf="@+id/icon6"/>
+
+    <ImageView
+        android:id="@+id/icon7"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label5"/>
+
+    <TextView
+        android:id="@+id/label7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="label5"
+        app:layout_constraintTop_toBottomOf="@+id/icon7"
+        app:layout_constraintStart_toStartOf="@+id/icon7"
+        app:layout_constraintEnd_toEndOf="@+id/icon7"/>
+
+    <ImageView
+        android:id="@+id/icon8"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label6"/>
+
+    <TextView
+        android:id="@+id/label8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="label6"
+        app:layout_constraintTop_toBottomOf="@+id/icon8"
+        app:layout_constraintStart_toStartOf="@+id/icon8"
+        app:layout_constraintEnd_toEndOf="@+id/icon8"/>
+
+    <!--ナビゲーションバーここから-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/material_dynamic_neutral40"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ImageView
+        android:id="@+id/homeIcon"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/homeicon" />
+
+    <ImageView
+        android:id="@+id/scheduleIcon"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/homeIcon"
+        app:srcCompat="@drawable/schedule" />
+
+    <ImageView
+        android:id="@+id/linkIcon"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/scheduleIcon"
+        app:srcCompat="@drawable/baseline_link_24" />
+
+    <ImageView
+        android:id="@+id/settingIcon"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/linkIcon"
+        app:srcCompat="@drawable/baseline_settings_suggest_24" />
+
+    <!--ナビゲーションバーここまで-->
+</androidx.constraintlayout.widget.ConstraintLayout>
