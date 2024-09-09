@@ -39,7 +39,7 @@ public class systemInfo extends AppCompatActivity {
 
         // ナビゲーションバーここから
         binding.homeIcon.setOnClickListener(view -> {
-            Intent intent = new Intent(this, Settings.class);
+            Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
         });
 
