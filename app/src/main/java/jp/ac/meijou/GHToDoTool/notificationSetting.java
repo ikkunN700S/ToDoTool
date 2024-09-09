@@ -9,45 +9,23 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import jp.ac.meijou.GHToDoTool.databinding.ActivitySettingsBinding;
-import jp.ac.meijou.GHToDoTool.databinding.ActivitySystemInfoBinding;
+import jp.ac.meijou.GHToDoTool.databinding.ActivityLinkSettingBinding;
+import jp.ac.meijou.GHToDoTool.databinding.ActivityNotificationSettingBinding;
 
-public class Settings extends AppCompatActivity {
+public class notificationSetting extends AppCompatActivity {
 
-    private ActivitySettingsBinding binding;
+    private ActivityNotificationSettingBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        binding = ActivitySettingsBinding.inflate(getLayoutInflater());
+        binding = ActivityNotificationSettingBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
-        });
-
-        // 通知ボタンで通知設定ページへ遷移
-        binding.notificationSetting.setOnClickListener(view -> {
-            Intent intent = new Intent(this, notificationSetting.class);
-            startActivity(intent);
-        });
-
-        // ToDo管理ボタン
-
-        // 時間割ボタン
-
-        // リンクの編集画面へ遷移
-        binding.linkSetting.setOnClickListener(view -> {
-            Intent intent = new Intent(this, linkSetting.class);
-            startActivity(intent);
-        });
-
-        // 情報ボタンでシステム情報ページに遷移
-        binding.systemInfo.setOnClickListener(view ->{
-            Intent intent = new Intent(this, systemInfo.class);
-            startActivity(intent);
         });
 
         // ナビゲーションバーここから

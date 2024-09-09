@@ -1,12 +1,170 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".linkSetting">
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginBottom="80dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+      <TextView
+          android:id="@+id/title"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="40dp"
+          android:text="リンク設定"
+          android:textAlignment="center"
+          android:textSize="40sp"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <EditText
+          android:id="@+id/linklabel1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="10dp"
+          android:layout_marginTop="40dp"
+          android:text="リンク1"
+          android:textSize="25sp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/title"/>
+
+      <EditText
+          android:id="@+id/link1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:layout_constraintTop_toBottomOf="@+id/linklabel1"/>
+
+      <EditText
+          android:id="@+id/linklabel2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="10dp"
+          android:layout_marginTop="40dp"
+          android:text="リンク2"
+          android:textSize="25sp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/link1"/>
+
+      <EditText
+          android:id="@+id/link2"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:layout_constraintTop_toBottomOf="@+id/linklabel2"/>
+
+      <EditText
+          android:id="@+id/linklabel3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="10dp"
+          android:layout_marginTop="40dp"
+          android:text="リンク3"
+          android:textSize="25sp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/link2"/>
+
+      <EditText
+          android:id="@+id/link3"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:layout_constraintTop_toBottomOf="@+id/linklabel3"/>
+
+      <EditText
+          android:id="@+id/linklabel4"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="10dp"
+          android:layout_marginTop="40dp"
+          android:text="リンク4"
+          android:textSize="25sp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/link3"/>
+
+      <EditText
+          android:id="@+id/link4"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:layout_constraintTop_toBottomOf="@+id/linklabel4"/>
+
+      <EditText
+          android:id="@+id/linklabel5"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="10dp"
+          android:layout_marginTop="40dp"
+          android:text="リンク5"
+          android:textSize="25sp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/link4"/>
+
+      <EditText
+          android:id="@+id/link5"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:layout_constraintTop_toBottomOf="@+id/linklabel5"/>
+
+      <EditText
+          android:id="@+id/linklabel6"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="10dp"
+          android:layout_marginTop="40dp"
+          android:text="リンク6"
+          android:textSize="25sp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/link5"/>
+
+      <EditText
+          android:id="@+id/link6"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:layout_constraintTop_toBottomOf="@+id/linklabel6"/>
+
+      <EditText
+          android:id="@+id/linklabel7"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="10dp"
+          android:layout_marginTop="40dp"
+          android:text="リンク7"
+          android:textSize="25sp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/link6"/>
+
+      <EditText
+          android:id="@+id/link7"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:layout_constraintTop_toBottomOf="@+id/linklabel7"/>
+
+      <EditText
+          android:id="@+id/linklabel8"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="10dp"
+          android:layout_marginTop="40dp"
+          android:text="リンク8"
+          android:textSize="25sp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/link7"/>
+
+      <EditText
+          android:id="@+id/link8"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:layout_constraintTop_toBottomOf="@+id/linklabel8"/>
+
+    </LinearLayout>
+  </ScrollView>
 
   <!--ナビゲーションバーここから-->
   <androidx.appcompat.widget.Toolbar
