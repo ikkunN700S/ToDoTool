@@ -458,4 +458,50 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/fri6"
         app:layout_constraintTop_toBottomOf="@+id/sat5" />
+
+    <!--ナビゲーションバーここから-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/material_dynamic_neutral40"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ImageView
+        android:id="@+id/homeIcon"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/homeicon" />
+
+    <ImageView
+        android:id="@+id/scheduleIcon"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/homeIcon"
+        app:srcCompat="@drawable/schedule" />
+
+    <ImageView
+        android:id="@+id/linkIcon"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/scheduleIcon"
+        app:srcCompat="@drawable/baseline_link_24" />
+
+    <ImageView
+        android:id="@+id/settingIcon"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/linkIcon"
+        app:srcCompat="@drawable/baseline_settings_suggest_24" />
+
+    <!--ナビゲーションバーここまで-->
 </androidx.constraintlayout.widget.ConstraintLayout>

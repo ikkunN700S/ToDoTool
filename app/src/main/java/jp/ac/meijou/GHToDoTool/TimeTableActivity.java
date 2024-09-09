@@ -1,6 +1,7 @@
 package jp.ac.meijou.GHToDoTool;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -58,6 +59,28 @@ public class TimeTableActivity extends AppCompatActivity {
 
             }
         });
+
+        // ナビゲーションバーここから
+        binding.homeIcon.setOnClickListener(view -> {
+            Intent intent = new Intent(this, Settings.class);
+            startActivity(intent);
+        });
+
+        binding.scheduleIcon.setOnClickListener(view -> {
+            Intent intent = new Intent(this, TimeTableActivity.class);
+            startActivity(intent);
+        });
+
+        binding.linkIcon.setOnClickListener(view -> {
+            Intent intent = new Intent(this, LinkPage.class);
+            startActivity(intent);
+        });
+
+        binding.settingIcon.setOnClickListener(view -> {
+            Intent intent = new Intent(this, Settings.class);
+            startActivity(intent);
+        });
+        // ナビゲーションバーここまで
     }
 
 }
