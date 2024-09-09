@@ -36,7 +36,7 @@ public class linkSetting extends AppCompatActivity {
         });
 
         binding.scheduleIcon.setOnClickListener(view -> {
-            Intent intent = new Intent(this, Settings.class);
+            Intent intent = new Intent(this, TimeTableActivity.class);
             startActivity(intent);
         });
 
